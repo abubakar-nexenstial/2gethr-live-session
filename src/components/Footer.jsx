@@ -19,13 +19,16 @@ export default function Footer() {
 
   return (
     <>
-      <footer className="fixed flex bottom-0 footer items-center p-4 justify-between text-neutral-content border-t-2 border-[#424242] bg-slate-30 backdrop-blur-md">
-        <span className="flex justify-center align-align-items-center gap-2">
-          <BsHouseDoorFill />
+      <footer className="fixed flex bottom-0 footer items-center p-4 justify-between text-2xl text-neutral-content border-t-2 border-[#424242] bg-black backdrop-blur-md">
+        <span className="flex justify-center align-items-center gap-2">
+          <BsHouseDoorFill className="mt-1" />
           <p>&nbsp;24-1C</p>
         </span>
-        <span className="flex justify-center align-align-items-center gap-2">
-          <LuClock3 />
+        <span>
+          <p>Device: NLV8HDOCKKREEV6T</p>
+        </span>
+        <span className="flex justify-center align-items-center gap-2">
+          <LuClock3 className="mt-1" />
           <p>&nbsp;{formattedTime}</p>
         </span>
       </footer>
